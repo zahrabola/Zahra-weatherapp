@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="src/stylemethod.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/c64378f111.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+
+
+ <div class="container">
+        <div class="weather-app">
+          <form class="city-search-form">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+              name="search"
+              placeholder="Enter city"
+              id="weather-search-bar"
+              class="form-control"
+                />
+              </div>
+              
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary" />
+                
+           
+      <button class="btn btn-success"type="button"
+              value="current_location"
+              class="current-location"
+              id="submit-current-location" id="current-location-button">
+                Current
+              </button>
+
+              
+             <inout type="btn btn-success"  type="button"
+              value="search_button"
+              class="search-button"
+              id="submit-search"
+
+            </div>
+              </div>
+            </div>
+          
+
+
+    <header>
+      <ul>
+      <div class="navbar">
+          <li><a href="#Asia"> Asia </a></li>
+   <li><a href="#Africa"> Africa </a></li>
+  <li><a href="#North America">North  America</a></li>
+  <li><a href="#South America"> South  America</a></li>
+  <li><a href="# Antarctica"> Antarctica</a></li>
+  <li><a href="#Europe"> Europe</a></li>
+   <li><a href="# Australia"> Australia</a></li>
+  
+  
+</ul>
+  </div>
+    </header>
+
+          </div>
+    
+    <h1>
+    <div class="row">
+        <div class="col">
+          <div class="city">
+             <h1 class="current-city" id="current-city-id"></h1>
+          </div>
+        </div>
+      </div>
+  </h1>
+
+<h2>
+  <div class="col temp-current">
+    <div class="row">
+        <div class="col temp-current ">
+          <span class="temp-now"></a>
+            </span>
+          <span class="units">
+              <a href="#" id="celsius-link">°C</a> | 
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+        </div>
+      </div>
+  </h2>
+
+
+
+    
+<body>
+  <div class="DayandTime">
+      <p class="currentday">
+          Sunday
+        </p>
+    <span class=" clock-time"> 12:45 </span>
+    <span class="clock-ampm"> PM </span>
+  </div>
+</body>
+
+<body>
+  <img
+      src="images/Weather 1.jpg"
+        width="500"
+      />
+</body>
+
+<aside>
+ <div id="EmojiCurrent-Weather" class="EmojiCurrent-Weather">
+  <div class="row">
+    <div class="col-sm">
+     <div class="card-body">
+    <h5 class="feels_like">Feels Like</h5>
+    <h6 class="feels_like">12°C</h6>
+    <i class="fas fa-temperature-low"></i>
+  </div>
+    </div>
+    <div class="col-sm">
+     <div class="card-body">
+    <h5 class="Humidity"id="humidity">Humidity</h5>
+    <h6 class="card-subtitle mb-2 text-muted">88%</h6>
+    <p> <i class="fas fa-tint"></i>%</p>
+  </div>
+    </div>
+    <div class="col-sm">
+     <div class="card-body">
+    <h5 class="WindSpeed">Wind</h5>
+    <h6 class="card-subtitle mb-2 text-muted">8km/h</h6>
+    <i class="fas fa-wind"></i>
+  </div>
+    </div>
+    <div class="col-sm">
+       <div class="card-body">
+    <h5 class="AirQuality">Air Quality</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Low</h6>
+    <i class="fas fa-stream"></i>
+  </div>
+    </div>
+    <div class="col-sm">
+  <div class="card-body">
+    <h5 class="UVIndex"> UV Index</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Low</h6>
+    <i class="fas fa-umbrella-beach"></i>
+  </div>
+    </div>
+    <div class="col-sm"id=>
+     <div class="card-body">
+    <h5 class="card-title"> Sunrise </h5>
+    <h6 class="card-subtitle mb-2 text-muted">06:45</h6>
+   <i class="far fa-sun"></i>
+  </div>
+    </div>
+    <div class="col-sm">
+    <div class="card-body">
+    <h5 class="card-title"> Sunset </h5>
+    <h6 class="card-subtitle mb-2 text-muted">17:31</h6>
+    <i class="far fa-moon"></i>
+  </div>
+    </div>
+  </div>
+</div>
+</aside>
+
+  <footer>
+  <div class="Next-Week">
+  <div class="row flex-wrap: nowrap">
+    <div class="col">  
+    </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/rain1.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Monday</h5>
+      <p class="card-text">
+        Afternoon Showers. Cold High 10°C. Winds NNW at 10 to 15km/h. Chance of
+        rain 70%.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/windy2.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Tuesday</h5>
+      <p class="card-text">
+        Partly Cloudy. Cold. Low 2°C. Winds NNW at 10 to 15km/h.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/rain2.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-day">Wednesday</h5>
+      <p class="card-text">
+        Afternoon Showers. Cold High 11°C. Winds NNW at 10 to 15km/h. Chance of
+        rain 84%.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/windy1.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-day">Thursday</h5>
+      <p class="card-text">Cloudy. High 13°C. Winds WSW at 15 to 30km/h.</p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/windy3.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-day">Friday</h5>
+      <p class="card-text">
+        Mostly Cloudy. High 13°C. Winds WNW at 15 to 30 km/h.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/rain4.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-day">Saturday</h5>
+      <p class="card-text">
+        Partly Cloudy. High 13°C. Winds WSW at 10 to 15 km/h. Chance of rain
+        40%.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+
+  <div class="Next-Week" style="width: 14%">
+    <img src="images/rain3.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-day">Sunday</h5>
+      <p class="card-text">
+        Light Rain. High 12°C. Winds WSW at 10 to 15 km/h. Chance of rain 70%.
+      </p>
+      <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+  </div>
+  <div class="signature">
+      Coded by Zahra Olanrewaju
+    </div>
+  </footer>
+  </body>
+  <script src="src/indexnew.js"></script>
+</html>
